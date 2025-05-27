@@ -39,7 +39,6 @@ func init() {
 }
 
 func main() {
-
 	//task1()
 	//err := task2()
 	//if err != nil {
@@ -50,7 +49,6 @@ func main() {
 	//task5()
 	//task6()
 	//task7()
-
 }
 
 /*
