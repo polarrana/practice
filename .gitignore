@@ -1,0 +1,19 @@
+# IDE 相关
+.idea/
+*.swp
+*.swo
+
+# Go 编译输出
+bin/
+dist/
+
+# 依赖目录
+vendor/
+
+# 测试输出
+coverage.txt
+profile.out
+
+# 环境文件
+.env
+*.env
