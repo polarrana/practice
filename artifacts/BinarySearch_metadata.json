@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					}
+				],
+				"name": "search",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"search(uint256[],uint256)": {
+					"details": "在已排序的数组中执行二分查找",
+					"params": {
+						"arr": "已排序的数组（升序）",
+						"target": "要查找的目标值"
+					},
+					"returns": {
+						"_0": "找到则返回索引，未找到则返回type(uint256).max"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity_task1/BinarySearch.sol": "BinarySearch"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity_task1/BinarySearch.sol": {
+			"keccak256": "0x86f65faf147bdf69f588ae529bc19996fe4bc62bf561d7d44936fa6f020360f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9bbbf5e16858ae95c51c4974a0d419ed02cde45bc02e7e434c73af79fafd5c2c",
+				"dweb:/ipfs/QmTbcMoq7DJTA68PPi4SARwgF4wNGXfVj4LUUUBVggMvGj"
+			]
+		}
+	},
+	"version": 1
+}

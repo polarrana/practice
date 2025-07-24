@@ -1,0 +1,252 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "CandidateAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "voter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "Voted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "resetBy",
+						"type": "address"
+					}
+				],
+				"name": "VotesReset",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "addCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllCandidates",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCandidateCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "isCandidateExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate",
+						"type": "string"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addCandidate(string)": {
+					"details": "添加新候选人",
+					"params": {
+						"candidate": "候选人名称"
+					}
+				},
+				"getAllCandidates()": {
+					"details": "获取所有候选人列表",
+					"returns": {
+						"_0": "包含所有候选人的数组"
+					}
+				},
+				"getCandidateCount()": {
+					"details": "获取候选人数量",
+					"returns": {
+						"_0": "候选人总数"
+					}
+				},
+				"getVotes(string)": {
+					"details": "获取指定候选人的得票数",
+					"params": {
+						"candidate": "候选人名称"
+					},
+					"returns": {
+						"_0": "该候选人的得票数"
+					}
+				},
+				"isCandidateExist(string)": {
+					"details": "检查候选人是否存在",
+					"params": {
+						"candidate": "候选人名称"
+					},
+					"returns": {
+						"_0": "是否存在"
+					}
+				},
+				"resetVotes()": {
+					"details": "重置所有候选人的得票数（仅所有者可调用）"
+				},
+				"vote(string)": {
+					"details": "给指定候选人投票",
+					"params": {
+						"candidate": "候选人名称"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity_task1/Voting.sol": "Voting"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity_task1/Voting.sol": {
+			"keccak256": "0x043843e4754db9db122c8f8c6b1e72d1410eaf87f82dbfb5cbd562faeb622555",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bf572ad99557e0d6b667f64bde472ee3b5cf0bb2f372e9a4bd1f4d70edffcc68",
+				"dweb:/ipfs/QmfC8Kz4APEgiFXC6Ca35rGCbGQY9ug2796sa8UMRkGvYB"
+			]
+		}
+	},
+	"version": 1
+}

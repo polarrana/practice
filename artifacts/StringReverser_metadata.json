@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str",
+						"type": "string"
+					}
+				],
+				"name": "reverse",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"reverse(string)": {
+					"details": "反转字符串",
+					"params": {
+						"_str": "要反转的字符串"
+					},
+					"returns": {
+						"_0": "反转后的字符串"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity_task1/StringReverser.sol": "StringReverser"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity_task1/StringReverser.sol": {
+			"keccak256": "0xae41da11f2c596569738ef6270af22f808a365f688a56557ea674b58b60e56f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://754bc07326371178168221576fe05f0ca2c9f1f0f40a591260fbaf3177a829c4",
+				"dweb:/ipfs/QmQUuqy3FcLM1CXjdQwxBHsChVQHpcVfvQrkuBg81Amys6"
+			]
+		}
+	},
+	"version": 1
+}
